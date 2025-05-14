@@ -18,8 +18,5 @@ int main()
     {
         printf("Le plus grand est : %d\n", c);
     }
-    
-    
-    
     return 0;
 }
