@@ -5,13 +5,10 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        if (a <= n)
-        {
-            printf("%d ", a);
-            c = a + b;
-            a = b;
-            b = c;
-        }
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
     }
 
     return 0;
