@@ -6,17 +6,17 @@ int main()
 
     scanf("%d %d %d", &a, &b, &c);
 
-    if (a >= b && a >= c)
+    if (a > b && a > c)
     {
-        printf("%d\n", a);
+        printf("%d ", a);
     } 
-    else if (b >= a && b >= c)
+    else if (b > a && b > c)
     {
-        printf("%d\n", b);
+        printf("%d ", b);
     } 
-    else if (c >= a && c >= b)
+    else if (c > a && c > b)
     {
-        printf("%d\n", c);
+        printf("%d ", c);
     }
     return 0;
 }
