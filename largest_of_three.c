@@ -10,11 +10,11 @@ int main()
     {
         printf("Le plus grand est : %d", a);
     } 
-    else if (b > a && b > c)
+    if (b > a && b > c)
     {
         printf("Le plus grand est : %d", b);
     } 
-    else if (c > a && c > b)
+    if (c > a && c > b)
     {
         printf("Le plus grand est : %d", c);
     }
