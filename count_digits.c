@@ -11,5 +11,5 @@ int main() {
     count++;
   }
 
-  printf("Number of digits: %d", count);
+  printf("%d contient %d chiffre(s).",n , count);
 }
