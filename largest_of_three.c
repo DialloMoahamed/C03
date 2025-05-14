@@ -8,15 +8,15 @@ int main()
 
     if (a > b && a > c)
     {
-        printf("%d ", a);
+        printf("Le plus grand est : %d ", a);
     } 
     else if (b > a && b > c)
     {
-        printf("%d ", b);
+        printf("Le plus grand est : %d ", b);
     } 
     else if (c > a && c > b)
     {
-        printf("%d ", c);
+        printf("Le plus grand est : %d ", c);
     }
     return 0;
 }
