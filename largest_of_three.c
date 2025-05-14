@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
     int a, b, c;
 
@@ -8,13 +8,15 @@ int main(int argc, char const *argv[])
 
     if ((a > b) && (a > c))
     {
-        printf("Le plus grand est : %d", a);
-    } else if ((b > a) && (b > c))
+        printf("Le plus grand est : %d\n", a);
+    } 
+    else if ((b > a) && (b > c))
     {
-        printf("Le plus grand est : %d", b);
-    } else
+        printf("Le plus grand est : %d\n", b);
+    } 
+    else
     {
-        printf("Le plus grand est : %d", c);
+        printf("Le plus grand est : %d\n", c);
     }
     
     
