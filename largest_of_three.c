@@ -14,7 +14,7 @@ int main()
     {
         grand = num3;
     }
-    printf("%d\n",grand);
+    printf("Le plus grand est : %d\n",grand);
     
     
     return 0;
