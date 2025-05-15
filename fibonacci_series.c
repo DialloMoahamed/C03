@@ -5,9 +5,9 @@ int main() {
     int n, a = 0, b = 1, c;
     scanf("%d", &n);
     printf("Série de Fibonacci : ");
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        if (a < n)
+        if (a <= n)
         {
             printf("%d ", a);
             c = a + b;
