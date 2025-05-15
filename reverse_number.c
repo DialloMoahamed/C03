@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[])
 {
-  int n=0, m=0;
+  int n, m;
 
     scanf("%d", &n);
 
@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
         m = m * 10 + n % 10;
         n = (n - n%10) / 10;
     }
-    printf("Nombre inversé : %d", m);
+    printf("Nombre inversé : %d\n", m);
     
     return 0;
 }

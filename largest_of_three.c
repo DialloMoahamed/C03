@@ -3,20 +3,19 @@
 int main(int argc, char const *argv[])
 {
     int a, b, c;
-    printf("Entrer trois entiers :");
     scanf("%d %d %d", &a, &b, &c);
 
     if (a > b && a > c)
     {
-        printf("Le plus grand est : %d", a);
+        printf("Le plus grand est : %d\n", a);
     } 
     else if (b > a && b > c)
     {
-        printf("Le plus grand est : %d", b);
+        printf("Le plus grand est : %d\n", b);
     } 
     else
     {
-        printf("Le plus grand est : %d", c);
+        printf("Le plus grand est : %d\n", c);
     }
     return 0;
 }
