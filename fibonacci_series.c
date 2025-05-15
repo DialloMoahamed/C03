@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-// int main() {
-//     int n, a = 0, b = 1, c;
-//     printf("Entrer un entier :");
-//     scanf("%d", &n);
+int main(int argc, char const *argv[]) {
 
-//     for (int i = 1; i <= n; i++) {
-//         if (a <= n)
-//         {
-//             printf("%d ", a);
-//             c = a + b;
-//             a = b;
-//             b = c;
-//         }
-//     }
+    int n, a = 0, b = 1, c;
+    scanf("%d", &n);
 
-//     return 0;
-// }
+    for (int i = 1; i <= n; i++) {
+        if (a <= n)
+        {
+            printf("%d ", a);
+            c = a + b;
+            a = b;
+            b = c;
+        }
+    }
+
+    return 0;
+}

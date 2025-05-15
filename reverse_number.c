@@ -4,7 +4,6 @@ int main(int argc, char const *argv[])
 {
   int n=0, m=0;
 
-    printf("Entrer une valeur : ");
     scanf("%d", &n);
 
     while (n>0)
