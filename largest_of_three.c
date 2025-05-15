@@ -5,13 +5,13 @@ int main(void)
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
 
- int max = a;
+    int max = a;
 
     if (b > max)
         max = b;
     if (c > max)
         max = c;
 
-    printf("Le plus grand est : %d\n", max);
+    printf("Le plus grand est : %d", max);
     return 0;
 }
