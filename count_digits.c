@@ -12,4 +12,5 @@ int main() {
   }
 
   printf("%d contient %d chiffre(s).", a, count);
+  return 0;
 }
