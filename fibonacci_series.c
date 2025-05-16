@@ -5,8 +5,7 @@ int main()
     int n, a = 0, b = 1, c;
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++) {
-        if (a <= n)
+        while (a <= n)
         {
             printf("%d ", a);
             c = a + b;
@@ -14,7 +13,6 @@ int main()
             b = c;
           
         }
-    }
 
     return 0;
 }
