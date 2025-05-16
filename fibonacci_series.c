@@ -7,14 +7,14 @@ int main(void) {
     int a = 0, b = 1;
 
     if (a <= n) {
-        printf("%d", a);
+        printf("%d", a); 
     }
 
     while (b <= n) {
-        printf(" %d", b);
-        int temp = b;
-        b = a + b;
-        a = temp;
+        printf(" %d", b); 
+        int temp = a + b;
+        a = b;
+        b = temp;
     }
 
     return 0;
