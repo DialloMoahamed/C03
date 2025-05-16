@@ -4,9 +4,6 @@ int main() {
   printf("Entrer un nombre positif : ");
   scanf("%d", &n);
 
-  printf("%d %d ", t1, t2);
-  nextTerm = t1 + t2;
-
   while (nextTerm <= n) {
     printf("%d ", nextTerm);
     t1 = t2;
