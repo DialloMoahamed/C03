@@ -2,17 +2,17 @@
 
 int main()
 {
-    int num1, num2, num3;
-    scanf("%d %d %d", &num1, &num2, &num3);
+    double num1, num2, num3;
+    scanf("%lf %lf %lf", &num1, &num2, &num3);
     if (num1 >= num2 && num1 >= num3)
     {
-        printf("le plus grand est : %d", num1);
+        printf("Le plus grand est : %.2f", num1);
     } else if (num2 >= num1 && num2 >= num3)
     {
-        printf("le plus grand est : %d",num2);
+        printf("Le plus grand est : %.2f",num2);
     } else
     {
-        printf("le plus grand est : %d",num3);
+        printf("Le plus grand est : %.2f",num3);
     } 
  
     return 0;
