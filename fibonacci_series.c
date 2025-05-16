@@ -1,17 +1,21 @@
 #include <stdio.h>
 
 int main() {
-  int a = 0, b = 1, c = 0, n, first = 1;
-  scanf("%d", &n);
+    int n;
+    scanf("%d", &n);
 
-  while (c <= n) {
-    if (!first) printf(" ");
-    printf("%d", c);
-    first = 0;
+    int a = 0, b = 1;
 
-    a = b;
-    b = c;
-    c = a + b;
-  }
-  return 0;
+    if (a <= n) {
+        printf("%d", a);  // pas d'espace avant le premier
+    }
+
+    while (b <= n) {
+        printf(" %d", b);  // espace avant les suivants
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+
+    return 0;
 }
