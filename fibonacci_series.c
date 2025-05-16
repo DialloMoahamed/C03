@@ -18,6 +18,5 @@ int main()
         b = temp;
     }
 
-    printf("\n");
     return 0;
 }
