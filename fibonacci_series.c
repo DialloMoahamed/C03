@@ -3,7 +3,7 @@ int main() {
     int t1 = 0, t2 = 1, nextTerm = 0, n;
     scanf("%d", &n);
 
-    for (int i = 3; i <= n; ++i) {
+    for (int i = 0; i <= n; ++i) {
         if (nextTerm <= n)
             printf("%d ", nextTerm);
             t1 = t2;
