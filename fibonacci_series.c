@@ -7,7 +7,7 @@ int main(void) {
     int a = 0, b = 1;
 
     if (n >= 0) {
-        printf("0");
+        printf("0 ");
     }
 
     while (b <= n) {
