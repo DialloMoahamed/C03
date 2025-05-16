@@ -4,7 +4,7 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 3; i <= n; ++i) {
-        if (nextTerm < n)
+        if (nextTerm <= n)
         {
             printf("%d ", nextTerm);
             t1 = t2;
