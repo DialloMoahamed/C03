@@ -2,20 +2,18 @@
 
 int main()
 {
-    int limit;
-    int a = 0, b = 1, temp;
+    int n, a = 0, b = 1, c;
+    scanf("%d", &n);
 
-    scanf("%d", &limit);
-
-    if (limit >= 0)
-        printf("0");
-
-    while (b <= limit)
-    {
-        printf(" %d", b);
-        temp = a + b;
-        a = b;
-        b = temp;
+    for (int i = 1; i <= n; i++) {
+        if (a <= n)
+        {
+            printf("%d ", a);
+            c = a + b;
+            a = b;
+            b = c;
+          
+        }
     }
 
     return 0;

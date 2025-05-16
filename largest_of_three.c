@@ -6,11 +6,11 @@ int main()
     scanf("%d %d %d", &num1, &num2, &num3);
 
     if (num1 >= num2 && num1 >= num3)
-        printf("%d\n", num1);
+        printf("Le plus grand nombre est : %d", num1);
     else if (num2 >= num1 && num2 >= num3)
-        printf("%d\n", num2);
+        printf("Le plus grand nombre est : %d", num2);
     else
-        printf("%d\n", num3);
+        printf("Le plus grand nombre est : %d", num3);
 
     return 0;
 }
