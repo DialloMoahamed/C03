@@ -4,7 +4,7 @@ int main() {
   printf("Entrer un nombre positif : ");
   scanf("%d", &n);
 
-  printf("La série de Fibonacci : %d %d ", t1, t2);
+  printf("%d %d ", t1, t2);
   nextTerm = t1 + t2;
 
   while (nextTerm <= n) {
