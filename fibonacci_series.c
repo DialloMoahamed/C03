@@ -6,13 +6,20 @@ int main() {
     printf("Entrez le nombre de termes: ");
     scanf("%d", &n);
     printf("Série de Fibonacci: ");
-    while (a <= n)
-    {
-        printf("%d ", a);
-        c = a + b;
-        a = b;
-        b = c;
-    }
+
+       for (int i = 1; i < n; i++)
+       {
+        if (a < n)
+        {
+            printf("%d ", a);
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        
+       }
+        
+        
          
     return 0;
 }
