@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main() {
   int t1 = 0, t2 = 1, nextTerm = 0, n;
-  printf("Entrer un nombre positif : ");
   scanf("%d", &n);
 
   while (nextTerm <= n) {
