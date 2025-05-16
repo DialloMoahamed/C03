@@ -4,7 +4,7 @@ int main() {
     scanf("%d", &n);
 
     while (nextTerm <= n) {
-      printf("%d, ", nextTerm);
+      printf("%d ", nextTerm);
       t1 = t2;
       t2 = nextTerm;
       nextTerm = t1 + t2;
