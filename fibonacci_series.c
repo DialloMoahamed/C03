@@ -5,16 +5,15 @@ int main(void) {
     scanf("%d", &n);
 
     if (a <= n) {
-        printf("%d", a); 
+        printf("%d ", a); 
     }
 
     while (b <= n) {
-        printf(" %d", b);
+        printf("%d ", b);
         int temp = b;
         b = a + b;
         a = temp;
     }
-
     return 0;
 }
 
