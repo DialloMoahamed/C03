@@ -6,13 +6,13 @@ int main()
     scanf("%f %f %f", &num1, &num2, &num3);
     if (num1 >= num2 && num1 >= num3)
     {
-        printf("le plus grand est : %.f.", num1);
+        printf("%.f est le plus grand", num1);
     } else if (num2 >= num1 && num2 >= num3)
     {
-        printf("le plus grand est : %.f.",num2);
+        printf("%.f est le plus grand",num2);
     } else
     {
-        printf("le plus grand est : %.f.",num3);
+        printf("%.f est le plus grand",num3);
     } 
  
     return 0;
