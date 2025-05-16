@@ -7,14 +7,14 @@ int main(void) {
     int a = 0, b = 1;
 
     if (a <= n) {
-        printf("%d", a);  // pas d'espace avant le premier
+        printf("%d", a);
     }
 
     while (b <= n) {
-        printf(" %d", b);  // espace avant les suivants
-        int temp = a + b;
-        a = b;
-        b = temp;
+        printf(" %d", b);
+        int temp = b;
+        b = a + b;
+        a = temp;
     }
 
     return 0;
