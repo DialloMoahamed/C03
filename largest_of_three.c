@@ -2,8 +2,8 @@
 
 int main()
 {
-    double num1, num2, num3;
-    scanf("%lf %lf %lf", &num1, &num2, &num3);
+    float num1, num2, num3;
+    scanf("%f %f %f", &num1, &num2, &num3);
     if (num1 >= num2 && num1 >= num3)
     {
         printf("Le plus grand est : %.f", num1);
