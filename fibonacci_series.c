@@ -3,19 +3,20 @@
 int main(void)
 {
     int n;
-    scanf("%d", &n);
+    if (scanf("%d", &n) != 1) return 1;
 
-    int a = 0;
-    int b = 1;
+    int a = 0, b = 1;
 
-    while (a <= n)
+    if (n >= 0)
     {
         printf("%d", a);
-        int next = a + b;
-        a = b;
-        b = next;
-        if (a <= n)
-            printf(" ");
+        while (b <= n)
+        {
+            printf(" %d", b);
+            int next = a + b;
+            a = b;
+            b = next;
+        }
     }
 
     printf("\n");
