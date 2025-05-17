@@ -10,14 +10,19 @@ int main()
     if (limite < 0)
         return 0;
 
-    printf("%d ", a);
+    // Affiche le premier terme sans espace
+    printf("%d", a);
 
+    // Affiche les termes suivants avec un espace précédent
     while (b <= limite)
     {
-        printf("%d ", b);
+        printf(" %d", b);
         suivant = a + b;
         a = b;
         b = suivant;
     }
+
+    printf("\n"); // Retour à la ligne final
+
     return 0;
 }
