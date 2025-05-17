@@ -4,6 +4,7 @@ int main(void) {
     int n, i;
     int a = 0, b = 1, c;
     scanf("%d", &n);
+    printf("Série de Fibonacci :");
     for (i = 0; i <= n; i++) {
         if (a <= n)
         {
