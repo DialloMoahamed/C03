@@ -1,23 +1,25 @@
 #include <stdio.h>
-
 int main() {
-    int n;
-    scanf("%d", &n);
 
-    int a = 0, b = 1;
+  int i, n;
 
-    if (n >= 0) {
-        printf("0");
+  int t1 = 0, t2 = 1;
+
+  int nextTerm = t1 + t2;
+
+  scanf("%d", &n);
+
+  printf("%d %d ", t1, t2);
+
+  for (i = 0; i <= n; i++) {
+    if (t1 <= n)
+    {
+        printf("%d ", nextTerm);
+        t1 = t2;
+        t2 = nextTerm;
+        nextTerm = t1 + t2;
     }
+  }
 
-    while (b <= n) {
-        printf(" %d", b);
-        int temp = b;
-        b = a + b;
-        a = temp;
-    }
-
-    return 0;
+  return 0;
 }
-
-
