@@ -10,10 +10,8 @@ int main()
     if (limite < 0)
         return 0;
 
-    // Affiche le premier terme sans espace
-    printf("0");
+    printf("%d", a);
 
-    // Ensuite, on affiche les suivants avec un espace devant
     while (b <= limite)
     {
         printf(" %d", b);
@@ -22,7 +20,7 @@ int main()
         b = suivant;
     }
 
-    printf("\n"); // Fin de ligne obligatoire
+    printf("\n");
 
     return 0;
 }
