@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(int argc, char const *argv[]) {
 
-    
     int n, i, b = 0, c = 1;
     scanf("%d", &n);
     for (i = 0; i <= n; ++i) {
@@ -14,3 +13,4 @@ int main(void) {
 
     return 0;
 }
+
