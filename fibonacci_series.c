@@ -10,11 +10,11 @@ int main()
     if (limite < 0)
         return 0;
 
-    printf("%d", a);
+    printf("%d ", a);
 
     while (b <= limite)
     {
-        printf(" %d", b);
+        printf("%d ", b);
         suivant = a + b;
         a = b;
         b = suivant;
