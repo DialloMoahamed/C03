@@ -2,28 +2,21 @@
 
 int main()
 {
-    int n, nbr1 = 0, nbr2 = 1, suivant, i;
+    int limite, a = 0, b = 1, suivant;
 
-    scanf("%d", &n);
+    scanf("%d", &limite);
 
-    if (n <= 0)
+    if (limite < 0)
         return 0;
 
-    for (i = 0; i < n; i++)
-    {
-        if (i <= 1)
-            suivant = i;
-        else
-        {
-            suivant = nbr1 + nbr2;
-            nbr1 = nbr2;
-            nbr2 = suivant;
-        }
+    printf("%d", a);
 
-        if (i == n - 1)
-            printf("%d", suivant);
-        else
-            printf("%d ", suivant);
+    while (b <= limite)
+    {
+        printf(" %d", b);
+        suivant = a + b;
+        a = b;
+        b = suivant;
     }
 
     return 0;
