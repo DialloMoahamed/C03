@@ -7,7 +7,7 @@ int main(void) {
     for (i = 0; i <= n; i++) {
         if (a <= n)
         {
-            printf("%d  ", a);
+            printf(" %d", a);
             c = a + b;
             a = b;
             b = c;
