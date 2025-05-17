@@ -1,15 +1,22 @@
 #include <stdio.h>
 
 int main(void) {
-    int n, a = 0, b = 1, temp;
-    scanf("%d", &n);
-    while (a <= n) {
+    int limit;
+    scanf("%d", &limit);
+
+    int a = 0, b = 1;
+
+    while (a <= limit) {
         printf("%d", a);
-        temp = a + b;
+        int next = a + b;
         a = b;
-        b = temp;
-        if (a <= n) printf(" ");
+        b = next;
+
+        if (a <= limit) {
+            printf(" ");
+        }
     }
+
     printf("\n");
     return 0;
 }
