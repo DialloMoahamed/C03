@@ -2,17 +2,13 @@
 
 int main(void) {
     int n, i;
-    int a = 0, b = 1, c;
+    int b = 0, c = 1;
     scanf("%d", &n);
-    printf("Série de Fibonacci :");
     for (i = 0; i <= n; i++) {
-        if (a <= n)
-        {
-            printf(" %d", a);
-            c = a + b;
-            a = b;
+            printf("%d ", i);
+            c = i + b;
+            i = b;
             b = c;
-        }
     }
 
     return 0;
