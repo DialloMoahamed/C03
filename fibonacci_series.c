@@ -6,14 +6,13 @@ int main(void) {
 
     int a = 0, b = 1;
 
-    while (a <= n) {
+    for (; a <= n; ) {
         printf("%d", a);
         int next = a + b;
         a = b;
         b = next;
-        if (a <= n) {
+        if (a <= n)
             printf(" ");
-        }
     }
 
     printf("\n");
