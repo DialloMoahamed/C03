@@ -14,7 +14,6 @@ int main(void) {
         a = b;
         b = temp;
     }
-    printf("\n");
 
     return 0;
 }
