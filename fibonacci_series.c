@@ -5,9 +5,7 @@ int main()
   int n, nbr1 = 0, nbr2 = 1, suivant, i;
  
   scanf("%d", &n);
- 
-  printf("Les %d premiers termes de la série de Fibonacci sont:\n", n);
- 
+  
   for (i = 0; i < n; i++)
   {
     if (i <= 1)
