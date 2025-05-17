@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]) {
-
-    int n, i, b = 0, c = 1;
+int main(void) {
+    int n;
     scanf("%d", &n);
-    for (i = 0; i <= n; ++i) {
-        printf("%d ", i);
-        c = i + b;
-        i = b;
-        b = c;
+
+    int a = 0, b = 1, temp;
+
+    for (int i = 0; i < n; i++) {
+        printf("%d", a);
+        if (i < n - 1)
+            printf(" ");
+        temp = a + b;
+        a = b;
+        b = temp;
     }
+    printf("\n");
 
     return 0;
 }
