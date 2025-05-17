@@ -11,7 +11,7 @@ int main(void) {
     }
 
     while (b <= n) {
-        printf("%d ", b);
+        printf(" %d ", b);
         int temp = b;
         b = a + b;
         a = temp;
