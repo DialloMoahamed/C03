@@ -19,6 +19,6 @@ int main() {
         b = prochainTerme;
         prochainTerme = a + b;
     }
-
+    printf("\n");
     return 0;
 }
