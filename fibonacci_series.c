@@ -22,7 +22,7 @@ int main() {
         b = prochainTerme;
         prochainTerme = a + b;
     }
-    printf("\n"); // Ajouter un saut de ligne à la fin
+    printf("\n");
 
     return 0;
 }
