@@ -7,8 +7,6 @@ int main() {
 
     int a = 0, b = 1, prochainTerme;
 
-    printf("Série de Fibonacci jusqu'à %d : ", limite);
-
     if (limite >= a) {
         printf("%d ", a);
     }
