@@ -11,16 +11,16 @@ int main() {
     printf("Série de Fibonacci jusqu'à %d : ", limite);
 
     if (limite >= a) {
-        printf("%d, ", a);
+        printf("%d ", a);
     }
     if (limite >= b) {
-        printf("%d, ", b);
+        printf("%d ", b);
     }
 
     prochainTerme = a + b;
 
     while (prochainTerme <= limite) {
-        printf("%d, ", prochainTerme);
+        printf("%d ", prochainTerme);
         a = b;
         b = prochainTerme;
         prochainTerme = a + b;
