@@ -3,16 +3,12 @@
 int main() {
     int limite;
 
+    printf("Entrez la limite maximale pour la série de Fibonacci : ");
     scanf("%d", &limite);
 
     int a = 0, b = 1, prochainTerme;
 
-    if (limite >= a) {
-        printf("%d ", a);
-    }
-    if (limite >= b) {
-        printf("%d ", b);
-    }
+    printf("%d %d ", a, b);
 
     prochainTerme = a + b;
 
