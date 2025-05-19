@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int limite, premier = 0, second = 1, suivant;
-    scanf("%d", &limite);
+    int a, b = 0, c = 1, d;
+    scanf("%d", &a);
 
-    while (premier <= limite) {
-        printf("%d ", premier);
-        suivant = premier + second;
-        premier = second;
-        second = suivant;
+    while (b <= a) {
+        printf("%d ", b);
+        d = b + c;
+        b = c;
+        c = d;
     }
     return 0;
 }
