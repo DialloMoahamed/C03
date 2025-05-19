@@ -15,28 +15,27 @@
 // }
 
 int main() {
-    int limite;
-    int premier = 0;
-    int second = 1;
-    int suivant;
+    int a;
+    int x = 0;
+    int y = 1;
+    int z;
 
-    scanf("%d", &limite);
+    scanf("%d", &a);
 
 
-    if (premier <= limite) {
-        printf("%d ", premier);
+    if (x <= a) {
+        printf("%d ", x);
     }
-    if (second <= limite) {
-        printf("%d ", second);
+    if (y <= a) {
+        printf("%d", y);
     }
 
-    suivant = premier + second; // Initialiser 'suivant' avant la boucle
-    while (suivant <= limite) {
-        printf("%d ", suivant);
-        premier = second;
-        second = suivant;
-        suivant = premier + second; // Calculer le prochain 'suivant'
+    z = x + y;
+    while (z <= a) {
+        printf(" %d", z);
+        x = y;
+        y = z;
+        z = x + y;
     }
-    printf("\n");
     return 0;
 }
