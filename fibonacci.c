@@ -9,13 +9,13 @@ int main() {
     scanf("%d", &a);
 
     if (x <= a)
-        printf("%d", x);
+        printf("%d ", x);
     if (y <= a)
-        printf(" %d", y);
+        printf("%d ", y);
 
     z = x + y;
     while (z <= a) {
-        printf(" %d", z);
+        printf("%d ", z);
         x = y;
         y = z;
         z = x + y;
