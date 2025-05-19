@@ -1,23 +1,16 @@
 #include <stdio.h>
 
-// Ce script affiche la série de Fibonacci jusqu'à une limite donnée
-
 int main() {
-    int limite;
-
+    int limite, premier = 0, second = 1, suivant;
+    printf("Entrez la limite de la série de Fibonacci: ");
     scanf("%d", &limite);
 
-    int a = 0, b = 1, prochainTerme;
-
-    printf("%d,%d,", a, b);
-
-    prochainTerme = a + b;
-
-    while (prochainTerme <= limite) {
-        printf("%d,", prochainTerme);
-        a = b;
-        b = prochainTerme;
-        prochainTerme = a + b;
+    printf("Série de Fibonacci jusqu'à %d: ", limite);
+    while (premier <= limite) {
+        printf("%d ", premier);
+        suivant = premier + second;
+        premier = second;
+        second = suivant;
     }
     printf("\n");
     return 0;
