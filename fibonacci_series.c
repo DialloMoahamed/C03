@@ -10,6 +10,5 @@ int main() {
         premier = second;
         second = suivant;
     }
-    printf("\n");
     return 0;
 }
