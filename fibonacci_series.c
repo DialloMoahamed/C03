@@ -9,10 +9,10 @@ int main() {
    scanf("%u", &limite);
 
    if (terme1 <= limite) {
-      printf("%u  ", terme1);
+      printf("%u ", terme1);
    }
    if (terme2 <= limite) {
-      printf("%u  ", terme2);
+      printf("%u ", terme2);
    }
 
    while (1) {
@@ -20,7 +20,7 @@ int main() {
       if (suivant > limite) {
          break;
       }
-      printf("%u  ", suivant);
+      printf("%u ", suivant);
       terme1 = terme2;
       terme2 = suivant;
    }
