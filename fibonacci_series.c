@@ -1,21 +1,22 @@
 #include <stdio.h>
 
-int main() {
-   int a, b, c, i, n;
+int main()
+{
+   int prv=0, pre=1, trm, i, n;
 
    scanf("%d", &n);
 
-   a = b = 1;
-   
-   printf("%d %d ",a,b);
+   printf("%d %d ", prv, pre);
 
-   for(i = 1; i <= n-2; i++) {
-      c = a + b;
-      printf("%d ", c);
-      
-      a = b;
-      b = c;
+   for(i=3; i<=n; i++)
+   {
+     trm = prv + pre;
+     printf("%d ", trm);
+     prv = pre;
+     pre = trm;
    }
-   
+
+   printf("\n");
+
    return 0;
 }
