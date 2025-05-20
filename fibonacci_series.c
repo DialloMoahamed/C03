@@ -14,7 +14,6 @@ int main() {
     int terme;
 
     // Lire la valeur limite
-    printf("Entrez la valeur limite : ");
     scanf("%d", &n);
 
     // Afficher les termes tant qu'ils sont ≤ n
