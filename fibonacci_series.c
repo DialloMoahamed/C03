@@ -5,6 +5,7 @@ int main()
    int prv = 0, pre = 1, trm = 0, n;
 
    scanf("%d", &n);
+   printf("\n");
 
    if (n >= 0) {
       printf("%d ", prv);
