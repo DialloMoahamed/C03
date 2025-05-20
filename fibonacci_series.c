@@ -7,11 +7,11 @@ int main()
     scanf("%d", &n);
 
     if (n >= 0) {
-        printf("%d ", prv);
+        printf("%d\n", prv);
     }
 
     if (n >= 1) {
-        printf("%d", pre);
+        printf("%d\n", pre);
     }
 
     while (1) {
@@ -19,9 +19,10 @@ int main()
         if (trm > n) {
             break;
         }
-        printf(" %d", trm);
+        printf("%d", trm);
         prv = pre;
         pre = trm;
+        printf("\n");
     }
 
     return 0;
