@@ -3,26 +3,28 @@
 int main(void)
 {
     int limit;
-    int a = 0;
-    int b = 1;
-    int c;
+    int a = 0, b = 1, next;
 
+    // Lire la limite
     scanf("%d", &limit);
 
+    // Afficher la suite de Fibonacci jusqu’à la valeur limite
     if (limit >= 0)
-        printf("0");
+        printf("%d ", a);
     if (limit >= 1)
-        printf(" 1");
+        printf("%d ", b);
 
-    c = a + b;
-    while (c <= limit)
+    next = a + b;
+
+    while (next <= limit)
     {
-        printf(" %d", c);
+        printf("%d ", next);
         a = b;
-        b = c;
-        c = a + b;
+        b = next;
+        next = a + b;
     }
 
     printf("\n");
+
     return 0;
 }
