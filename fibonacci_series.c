@@ -11,7 +11,7 @@ int main()
    }
 
    if (n >= 1) {
-      printf("%d", pre);
+      printf("%d ", pre);
    }
 
    while (1) {
@@ -19,7 +19,7 @@ int main()
       if (trm > n) {
       break;
       }
-      printf(" %d", trm);
+      printf("%d ", trm);
       prv = pre;
       pre = trm;
    }
