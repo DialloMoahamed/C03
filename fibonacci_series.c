@@ -2,21 +2,29 @@
 
 int main()
 {
-   int prv=0, pre=1, trm, i, n;
+    int prv = 0, pre = 1, trm = 0, n;
 
-   scanf("%d", &n);
+    scanf("%d", &n);
 
-   printf("%d %d ", prv, pre);
+    if (n >= 0) {
+        printf("%d ", prv);
+    }
 
-   for(i=3; i<=n; i++)
-   {
-     trm = prv + pre;
-     printf("%d ", trm);
-     prv = pre;
-     pre = trm;
-   }
+    if (n >= 1) {
+        printf("%d ", pre);
+    }
 
-   printf("\n");
+    while (1) {
+        trm = prv + pre;
+        if (trm > n) {
+            break;
+        }
+        printf("%d ", trm);
+        prv = pre;
+        pre = trm;
+    }
 
-   return 0;
+    printf("\n");
+
+    return 0;
 }
