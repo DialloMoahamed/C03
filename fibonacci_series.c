@@ -1,32 +1,33 @@
 #include <stdio.h>
 
-// Fonction récursive pour calculer le nième terme de Fibonacci
-int fibonacci_recursif(int n) {
-    if (n <= 1) {
-        return n;
-    } else {
-        return fibonacci_recursif(n - 1) + fibonacci_recursif(n - 2);
-    }
-}
-
 int main() {
-    int n, i = 0;
-    int terme;
+    unsigned int limite;
+    unsigned int terme1 = 0;
+    unsigned int terme2 = 1;
+    unsigned int suivant;
 
     // Lire la valeur limite
-    scanf("%d", &n);
+    scanf("%u", &limite);
 
-    // Afficher les termes tant qu'ils sont ≤ n
+    // Afficher les deux premiers termes si dans la limite
+    if (terme1 <= limite) {
+        printf("%u  ", terme1);
+    }
+    if (terme2 <= limite) {
+        printf("%u  ", terme2);
+    }
+
+    // Générer la suite tant que les termes sont <= limite
     while (1) {
-        terme = fibonacci_recursif(i);
-        if (terme > n) {
+        suivant = terme1 + terme2;
+        if (suivant > limite) {
             break;
         }
-        printf("%d ", terme);
-        i++;
+        printf("%u  ", suivant);
+        terme1 = terme2;
+        terme2 = suivant;
     }
 
     printf("\n");
-
     return 0;
 }
