@@ -5,13 +5,14 @@ int main()
     int prv = 0, pre = 1, trm = 0, n;
 
     scanf("%d", &n);
+    printf("\n");
 
     if (n >= 0) {
-        printf("%d\n", prv);
+        printf("%d ", prv);
     }
 
     if (n >= 1) {
-        printf("%d\n", pre);
+        printf("%d", pre);
     }
 
     while (1) {
@@ -19,10 +20,9 @@ int main()
         if (trm > n) {
             break;
         }
-        printf("%d", trm);
+        printf(" %d", trm);
         prv = pre;
         pre = trm;
-        printf("\n");
     }
 
     return 0;
