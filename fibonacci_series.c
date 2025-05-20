@@ -1,30 +1,21 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int limit;
-    int a = 0, b = 1, next;
+int main() {
+    int n1=0,n2=1,n3,i,num;
 
-    // Lire la limite
-    scanf("%d", &limit);
-
-    // Afficher la suite de Fibonacci jusqu’à la valeur limite
-    if (limit >= 0)
-        printf("%d ", a);
-    if (limit >= 1)
-        printf("%d ", b);
-
-    next = a + b;
-
-    while (next <= limit)
+    scanf("%d" , &num);
+    printf("\n%d %d", n1, n2);
+    for (i = 2; i < num; ++i)
     {
-        printf("%d ", next);
-        a = b;
-        b = next;
-        next = a + b;
+        if (n3 <= num)
+        {
+            n3=n1+n2;
+            printf(" %d", n3);
+            n1=n2;
+            n2=n3;
+        }
+        
+        
     }
-
-    printf("\n");
-
     return 0;
 }
