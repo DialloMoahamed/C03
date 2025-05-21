@@ -25,6 +25,5 @@ int main() {
       terme2 = suivant;
    }
 
-   printf("\n");
    return 0;
 }
