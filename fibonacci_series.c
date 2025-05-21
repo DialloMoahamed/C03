@@ -23,6 +23,5 @@ int main() {
       terme1 = terme2;
       terme2 = suivant;
    }
-
    return 0;
 }
