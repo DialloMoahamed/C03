@@ -1,22 +1,27 @@
 #include <stdio.h>
 
-int main() {
-   unsigned int limite;
-   unsigned int a = 0, b = 1;
+int main(void)
+{
+    unsigned int n;
+    unsigned int a = 0, b = 1, temp;
 
-   scanf("%u", &limite);
+    scanf("%u", &n);
 
-   if (a <= limite) {
-      printf("%u", a);
-   }
+    if (a <= n)
+        printf("%u", a);
+    if (b <= n)
+        printf(" %u", b);
 
-   while (b <= limite) {
-      printf(" %u", b);
-      unsigned int temp = a + b;
-      a = b;
-      b = temp;
-   }
+    while (1)
+    {
+        temp = a + b;
+        if (temp > n)
+            break;
+        printf(" %u", temp);
+        a = b;
+        b = temp;
+    }
 
-   printf("\n");
-   return 0;
+    printf("\n");
+    return 0;
 }
