@@ -1,30 +1,29 @@
 #include <stdio.h>
 
-void afficher_fibonacci(unsigned int n)
-{
-    unsigned int a = 0, b = 1;
-
-    if (a <= n)
-        printf("%u", a);
-    if (b <= n)
-        printf(" %u", b);
-
-    while (1)
-    {
-        unsigned int suivant = a + b;
-        if (suivant > n)
-            break;
-        printf(" %u", suivant);
-        a = b;
-        b = suivant;
-    }
-}
-
 int main(void)
 {
     unsigned int n;
+    unsigned int fib[100];
+    int i = 2;
+
     scanf("%u", &n);
-    afficher_fibonacci(n);
+
+    fib[0] = 0;
+    fib[1] = 1;
+
+    printf("%u", fib[0]);
+    if (n >= 1)
+        printf(" %u", fib[1]);
+
+    while (1)
+    {
+        fib[i] = fib[i - 1] + fib[i - 2];
+        if (fib[i] > n)
+            break;
+        printf(" %u", fib[i]);
+        i++;
+    }
+
     printf("\n");
     return 0;
 }
