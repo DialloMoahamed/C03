@@ -3,23 +3,20 @@
 int main(void)
 {
     unsigned int n;
-    unsigned int a = 0, b = 1, temp;
+    unsigned int a = 0, b = 1;
 
     scanf("%u", &n);
 
-    if (a <= n)
-        printf("%u", a);
-    if (b <= n)
-        printf(" %u", b);
-
-    while (1)
+    int first = 1;
+    while (a <= n)
     {
-        temp = a + b;
-        if (temp > n)
-            break;
-        printf(" %u", temp);
+        if (!first)
+            printf(" ");
+        printf("%u", a);
+        unsigned int temp = a + b;
         a = b;
         b = temp;
+        first = 0;
     }
 
     printf("\n");
