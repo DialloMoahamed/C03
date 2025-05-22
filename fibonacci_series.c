@@ -14,6 +14,7 @@ int main() {
         a = b;
         b = suivant;
     }
+    printf("\n");
 
     return 0;
 }
