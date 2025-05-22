@@ -1,27 +1,21 @@
 #include <stdio.h>
 
-int main(void)
-{
-    unsigned int n;
-    unsigned int a = 0, b = 1, temp;
-
-    scanf("%u", &n);
-
-    if (a <= n)
-        printf("%u", a);
-    if (b <= n)
-        printf(" %u", b);
-
-    while (1)
-    {
-        temp = a + b;
-        if (temp > n)
-            break;
-        printf(" %u", temp);
+// Fonction pour afficher la suite de Fibonacci jusqu'à une certaine limite
+void afficherFibonacci(int limite) {
+    int a = 0, b = 1, suivant;
+    while (a <= limite) {
+        printf("%d ", a);
+        suivant = a + b;
         a = b;
-        b = temp;
+        b = suivant;
     }
+}
 
-    printf("\n");
+int main() {
+    int limite;
+    scanf("%d", &limite);
+
+    afficherFibonacci(limite);  // Appel de la fonction
+
     return 0;
 }
