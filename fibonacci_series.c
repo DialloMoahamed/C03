@@ -6,7 +6,7 @@ int main() {
 
     scanf("%d", &limite);
 
-    printf("%d ", a);
+    printf("Fibonacci : %d ", a);
 
     while (b <= limite) {
         printf("%d ", b);
