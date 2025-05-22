@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Fonction pour afficher la suite de Fibonacci jusqu'à une certaine limite
 void afficherFibonacci(int limite) {
     int a = 0, b = 1, suivant;
     while (a <= limite) {
@@ -9,13 +8,14 @@ void afficherFibonacci(int limite) {
         a = b;
         b = suivant;
     }
+    printf("\n");
 }
 
 int main() {
     int limite;
     scanf("%d", &limite);
 
-    afficherFibonacci(limite);  // Appel de la fonction
+    afficherFibonacci(limite);
 
     return 0;
 }
