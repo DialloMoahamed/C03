@@ -1,26 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    unsigned int limite;
-    unsigned int a = 0, b = 1, suivant;
+    int limite;
+    int a = 0, b = 1, suivant;
 
-    scanf("%u", &limite);
+    scanf("%d", &limite);
 
-    if (a <= limite)
-        printf("%u", a);
+    printf("%d ", a);
 
-    if (b <= limite && b != a)
-        printf(" %u", b);
-
-    while (1) {
+    while (b <= limite) {
+        printf("%d ", b);
         suivant = a + b;
-        if (suivant > limite)
-            break;
-        printf(" %u", suivant);
         a = b;
         b = suivant;
     }
 
-    printf("\n");
     return 0;
 }
